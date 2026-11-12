@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie & Recaps | SMS Sync Dresden</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Hauptnavigation">
+            <a href="index.html" class="brand-link">
+                <img src="assets/images/logo-sms-sync.png" alt="SMS Sync Logo" class="nav-logo-img">
+                <span class="brand-logo">SMS<span>SYNC</span></span>
+            </a>
+            
+            <button class="menu-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Menü öffnen">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <ul id="primary-navigation" class="nav-list">
+                <li><a href="index.html" class="nav-link">Startseite</a></li>
+                <li><a href="team.html" class="nav-link">Trainer & Crew</a></li>
+                <li><a href="galerie.html" class="nav-link active" aria-current="page">Galerie</a></li>
+                <li><a href="mitmachen.html" class="nav-link btn-nav">Mitmachen</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-padding">
+            <div class="container">
+                <header class="section-header">
+                    <span class="eyebrow">Stage, Contest & Meilensteine</span>
+                    <h1>Galerie & Recaps</h1>
+                    <p>
+                        Unsere Bühnenauftritte, Wettkampf-Recaps, unser erstes Vortanzen und unsere Solisten.
+                        Mehr Clips findest du auf <a href="https://www.instagram.com/sms_official_2024" target="_blank" rel="noopener noreferrer" class="inline-link">@sms_official_2024</a>.
+                    </p>
+                </header>
+
+                <!-- Interaktive Filter-Leiste -->
+                <div class="filter-bar" role="group" aria-label="Galerie nach Kategorien filtern">
+                    <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">Alle</button>
+                    <button type="button" class="filter-btn" data-filter="auftritte" aria-pressed="false">Auftritte</button>
+                    <button type="button" class="filter-btn" data-filter="wettkaempfe" aria-pressed="false">Wettkämpfe</button>
+                    <button type="button" class="filter-btn" data-filter="vortanzen" aria-pressed="false">Erstes Vortanzen</button>
+                    <button type="button" class="filter-btn" data-filter="solisten" aria-pressed="false">Solisten</button>
+                </div>
+
+                <!-- Galerie-Karten -->
+                <div class="story-grid" id="gallery-grid">
+                    <article class="card gallery-card" data-category="auftritte">
+                        <div class="gallery-media">
+                            <img src="assets/images/auftritt-1.jpg" alt="SMS Sync Gruppenauftritt auf der Bühne">
+                        </div>
+                        <span class="badge">Auftritte</span>
+                        <h3>Showprogramm & Bühnenpremiere</h3>
+                        <p>
+                            Unsere große Gruppen-Choreografie mit 16 Tänzer*innen auf der Hauptbühne – von den ersten Proben bis zum finalen Applaus.
+                        </p>
+                    </article>
+
+                    <article class="card gallery-card" data-category="wettkaempfe">
+                        <div class="gallery-media">
+                            <img src="assets/images/wettkampf-1.jpg" alt="SMS Sync beim Dance Contest">
+                        </div>
+                        <span class="badge">Wettkämpfe</span>
+                        <h3>Contest-Wochenende Recap</h3>
+                        <p>
+                            Intensive Vorbereitung, Backstage-Momente und unser Auftritt im Wettbewerb. Ein Meilenstein für den Zusammenhalt der gesamten Crew.
+                        </p>
+                    </article>
+
+                    <article class="card gallery-card" data-category="vortanzen">
+                        <div class="gallery-media">
+                            <img src="assets/images/vortanzen-1.jpg" alt="Erstes Vortanzen bei SMS Sync 2024">
+                        </div>
+                        <span class="badge">Erstes Vortanzen</span>
+                        <h3>Audition & Crew-Gründung 2024</h3>
+                        <p>
+                            Der Tag, an dem aus dem Trio SMS die große Formation SMS Sync wurde: Kennenlernen, gemeinsame Choreografie-Session und Start unserer Crew.
+                        </p>
+                    </article>
+
+                    <article class="card gallery-card" data-category="solisten">
+                        <div class="gallery-media">
+                            <img src="assets/images/solisten-1.jpg" alt="Solo-Performance eines Crew-Mitglieds">
+                        </div>
+                        <span class="badge">Solisten</span>
+                        <h3>Solo Showcases & Freestyles</h3>
+                        <p>
+                            Neben den großen Gruppen-Formationen präsentieren einzelne Tänzer*innen eigene Solo-Choreografien und Freestyles auf der Bühne und im Studio.
+                        </p>
+                    </article>
+
+                    <article class="card gallery-card" data-category="auftritte">
+                        <div class="gallery-media">
+                            <img src="assets/images/auftritt-2.jpg" alt="Vorbereitung auf die DeDeCo Dresden">
+                        </div>
+                        <span class="badge">Auftritte • 2027</span>
+                        <h3>Road to DeDeCo</h3>
+                        <p>
+                            Einblicke in unser aktuelles Training für die kommenden Convention-Shows in Dresden.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <p class="brand-logo">SMS<span>SYNC</span></p>
+                <p class="footer-text">Performance Dance Crew aus Dresden.</p>
+            </div>
+            <nav aria-label="Footer-Navigation">
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com/sms_official_2024" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="mailto:mail.sms.offical2024@gmx.de">E-Mail</a></li>
+                    <li><a href="impressum.html">Impressum & Datenschutz</a></li>
+                    <li><a href="mitmachen.html">Probetraining anfragen</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 SMS Sync Dresden. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
